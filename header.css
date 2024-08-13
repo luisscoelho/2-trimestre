@@ -4,8 +4,18 @@
     background-image: url("../img/Menu.svg");
     display: inline-block;
 }
-.cabeçalho{
+.cabecalho {
     background-color: var(--branco);
-    display:flex;
+    display: flex;
     justify-content: space-between;
-}
+    align-items: center;
+    position: relative;
+  }
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+  }
+  .container__botao:checked ~ .lista-menu {
+    display: block;
+  }
